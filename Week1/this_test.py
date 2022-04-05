@@ -13,3 +13,9 @@ if x == 5:
 
 def add(x, y):
     return x+y
+class User:
+def__init__(self, name, age, wisdom, strength)
+    self.name = name
+    self.age = age
+    self.wisdom = wisdom
+    self.strength = strength
