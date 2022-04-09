@@ -10,7 +10,7 @@ Inside of the Pop-up we need to:
 
 * Create a unique project name, example ` LoginReg `
 * Make sure the type is ` Maven `
-* Set Java Version to ` 11 `
+* Set Java Version to ` 1.8 `
 * Set Packaging to ` War `
 * Group name convention... ` com.username ` <-- your username/initials here
 * Package name convention... ` com.username.loginreg ` <-- your project name here!
