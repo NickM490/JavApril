@@ -24,7 +24,7 @@
 <body>
     <div class="container"> <!-- Beginning of Container -->
     
-    <h1>What Changes Would You Like to Make to This Candy?</h1>
+    <h1>Make a Candy Owner?</h1>
     
     <br>
     <a href="/dashboard">Dashboard</a>
@@ -32,37 +32,22 @@
     <a href="/oneCandy">One Candy</a>
     <a href="/updateCandy">Update Candy</a>
     
-    
-    <h4>Make Changes to ${candy.name} in the Form:Form below!</h4>
-    
-    <form:form action="/updatingCandy/${candy.id}" method="post" modelAttribute="candy">
-    
-    			<input  type="hidden" name="_method" value="put"/>
-    			
+        <h1>New Owner Form:Form </h1>
+			<form:form action="/processOwner" method="post" 					modelAttribute="owner">
 			    <p>
-			        <form:label path="name">Name</form:label>
-			        <form:errors class="alert-danger"  path="name"/>
-			        <form:input path="name"/>
+			        <form:label path="firstName">First Name</form:label>
+			        <form:errors class="alert-danger"  path="firstName"/>
+			        <form:input path="firstName"/>
 			    </p>
 			    <p>
-			        <form:label path="brand">Brand</form:label>
-			        <form:errors class="alert-danger" path="brand"/>
-			        <form:input path="brand"/>
-			    </p>
-			    <p>
-			        <form:label path="price">Price</form:label>
-			        <form:errors class="alert-danger" path="price"/>
-			        <form:input type="number" path="price"/>
-			    </p>
-			    <p>
-			        <form:label path="rating">Rating</form:label>
-			        <form:errors class="alert-danger" path="rating"/>     
-			        <form:input type="number" path="rating"/>
-			    </p>    
+			        <form:label path="lastName">Last Name</form:label>
+			        <form:errors class="alert-danger" path="lastName"/>
+			        <form:input path="lastName"/>
+			    </p>  
 			    <input type="submit" value="Submit"/>
 			</form:form>  
-    
-    
+			        
+        
         
     </div> <!-- End of Container -->
 </body>

@@ -32,6 +32,39 @@
     <a href="/oneCandy">One Candy</a>
     <a href="/updateCandy">Update Candy</a>
     
+        <h1>New Candy Form:Form </h1>
+			<form:form action="/processCandy" method="post" modelAttribute="candy">
+			    <p>
+			        <form:label path="name">Name</form:label>
+			        <form:errors class="alert-danger"  path="name"/>
+			        <form:input path="name"/>
+			    </p>
+			    <p>
+			        <form:label path="brand">Brand</form:label>
+			        <form:errors class="alert-danger" path="brand"/>
+			        <form:input path="brand"/>
+			    </p>
+			    <p>
+			        <form:label path="price">Price</form:label>
+			        <form:errors class="alert-danger" path="price"/>
+			        <form:input type="number" path="price"/>
+			    </p>
+			    <p>
+			        <form:label path="rating">Rating</form:label>
+			        <form:errors class="alert-danger" path="rating"/>     
+			        <form:input type="number" path="rating"/>
+			    </p>
+			    
+			    <form:select path="owner">
+				    <c:forEach var="i" items="${allOwners}">
+				    	<form:option value="${i.id}">${i.firstName} ${i.lastName}</form:option>
+				    </c:forEach>
+			    </form:select>
+			       
+			    <input type="submit" value="Submit"/>
+			</form:form>  
+			        
+        
         
     </div> <!-- End of Container -->
 </body>

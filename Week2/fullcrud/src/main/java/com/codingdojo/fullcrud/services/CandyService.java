@@ -60,6 +60,8 @@ public class CandyService {
 	
 	
 	// Update a Candy From Repo
-	
+	public Candy updateCandy(Candy candy) {
+		return candyRepo.save(candy);
+	}
 	
 }

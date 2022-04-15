@@ -32,6 +32,13 @@
     <a href="/oneCandy">One Candy</a>
     <a href="/updateCandy">Update Candy</a>
     
+    
+    <p> ${ candy.name} </p>
+    <p>${ candy.brand} </p>
+   <p> ${ candy.price}</p>
+    <p>${ candy.rating}</p>
+    <p>${ candy.owner.firstName} ${candy.owner.lastName }</p>
+    
         
     </div> <!-- End of Container -->
 </body>
