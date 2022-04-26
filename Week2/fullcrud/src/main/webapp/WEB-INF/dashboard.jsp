@@ -26,7 +26,7 @@ pageEncoding="UTF-8"%>
     <div class="container">
       <!-- Beginning of Container -->
 
-      <h1>Welcome to the Candy Carnivale`</h1>
+      <h1>Welcome to the Candy Carnivale` It's a great Thing!!</h1>
 
       <br />
       <a href="/dashboard">Dashboard</a>
