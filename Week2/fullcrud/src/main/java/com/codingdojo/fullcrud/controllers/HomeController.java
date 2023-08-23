@@ -101,11 +101,11 @@ public class HomeController {
 	 ******************************************************
 	 **/
 	@GetMapping("/dashboard")
-	public String dashboard(Model model) {
+	public String dashboard(Model model, HttpSession session) {
 
 		// Send our Candies to the JSP using Model model
 		model.addAttribute("allCands", candyServ.allCandys());
-
+		model.addAttribute("thisOwner", (ownerServ.findOwner((long)session.getAttribute( "user_id"))));
 		return "dashboard.jsp";
 	}
 
